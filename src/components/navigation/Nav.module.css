@@ -1,0 +1,8 @@
+.navUl {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .active > a {
+    border: 1px solid #63c;
+  }

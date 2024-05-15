@@ -1,0 +1,14 @@
+.urlInput{
+    display: block;
+    background: black;
+    color: white;
+    height: 40px;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    line-height: 40px;
+    border: 1px solid black;
+    margin: -1rem;
+    margin-bottom: 0;
+    padding-left: 1rem;
+    width: 100vw;
+  }

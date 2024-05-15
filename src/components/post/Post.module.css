@@ -1,0 +1,17 @@
+.container {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+  }
+  
+  .title {
+    margin: 0.5rem 0;
+  }
+  
+  .info * {
+    color: darkorange;
+    margin-top: 1rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.5rem;
+  }
+  
