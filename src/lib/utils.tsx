@@ -2,8 +2,12 @@ import { USERS, User } from "../data/userData";
 import { POSTS, Post } from "../data/postData";
 import { COMMENTS, Comment } from "../data/commentData";
 
-export const capitalize = (str: string) =>
-  str.charAt(0).toUpperCase() + str.slice(1);
+export const capitalize = (str: string | undefined): string => {
+  if (!str) {
+    return '';
+  }
+  return str.charAt(0).toUpperCase() + str.slice(1);
+};
 
 export const fetchUserData = async (
   userId: number
