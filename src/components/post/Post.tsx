@@ -1,5 +1,9 @@
+'use client'
+
 import React from 'react'
 import styles from './Post.module.css'
+import Link from 'next/link'
+
 
 type PostProps = {
   post: {
@@ -13,14 +17,14 @@ type PostProps = {
 export default function Post({ post: { userId, id, title, body } }: PostProps) {
   return (
     <div className={styles.container}>
-      <a href={`/questions/${id}`} >
+      <Link href={`/questions/${id}`} >
         <h2 className={styles.title}>{title}</h2>
-      </a>
+      </Link>
       <p>{body}</p>
       <small className={styles.info}>
-        <a href={`/users/${userId}`} >
+        <Link href={`/users/${userId}`} >
           User: {userId}
-        </a>
+        </Link>
       </small>
     </div>
   )
