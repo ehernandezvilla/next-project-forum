@@ -13,6 +13,8 @@ export default function QuestionsPage({ params }: { params: { id: string } }) {
   const [comments, setComments] = useState<Comment[]>([])
   const [isLoading, setIsLoading] = useState(true)
 
+ 
+
   useEffect(() => {
     const postId = parseInt(id, 10)
 

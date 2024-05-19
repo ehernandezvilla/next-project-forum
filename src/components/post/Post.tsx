@@ -13,12 +13,12 @@ type PostProps = {
 export default function Post({ post: { userId, id, title, body } }: PostProps) {
   return (
     <div className={styles.container}>
-      <a href={"/questions/REPLACE"} >
+      <a href={`/questions/${id}`} >
         <h2 className={styles.title}>{title}</h2>
       </a>
       <p>{body}</p>
       <small className={styles.info}>
-        <a href={"/users/REPLACE"} >
+        <a href={`/users/${userId}`} >
           User: {userId}
         </a>
       </small>
